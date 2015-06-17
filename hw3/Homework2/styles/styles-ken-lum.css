@@ -1,0 +1,77 @@
+/*
+
+Author: Ken Lum
+Course: COMP 1950
+
+*/
+
+/* HTML tag selectors */
+h1 {
+    background-color: yellow;
+    display: inline-block;
+}
+h2 {
+    color: #1dcd1f;
+}
+
+nav > ul > li {
+    display: inline;
+    margin-left: 35px;
+}
+
+img {
+    width: auto;
+    height: 200px;
+}
+img[src*="slovakia2.jpg"] {
+    float: left;
+    margin-right: 15px;
+}
+img[src$="malta.jpg"] {
+    float: right;
+    margin-left: 15px;
+}
+
+details, footer {
+    left: 50%;
+    margin-left: 38%;
+}
+summary {
+    outline: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+article:nth-child(2n+1) {
+    background-color: black;
+    color: white;
+}
+article:nth-child(2n+1) {
+    background-color: white;
+    background-color: black;
+}
+
+/* Class selectors */
+.place-img {
+    border: solid;
+    border-color: aqua;
+}
+
+/* ID selectors */
+#page3 {
+    background-image: url('../img/Slovakia-back.jpg');
+}
+#page4 {
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* Hybrid selectors */
+.inside nav {
+    background-color: darkgray;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}

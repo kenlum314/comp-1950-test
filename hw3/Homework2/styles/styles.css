@@ -1,0 +1,215 @@
+/*
+
+Author: Lucia Siplakova (A00959102)
+Course: COMP 1950
+
+*/
+
+/*
+--------------------------------------------------------------
+HTML Selectors
+--------------------------------------------------------------
+*/
+
+html {
+	height: 100%; 
+}
+
+body { 
+	height: 100%; 
+	color: #333;
+	font-family: Oswald, Arial;
+	margin: 0px;
+ }
+
+nav {
+    list-style-type: none;
+    position: absolute;
+    left: 0px;
+    top: 30px;   
+}
+
+nav li {
+    display: inline;
+    padding-right: 0px;
+    padding-left: 30px;
+    font-family: Oswald;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 100;   
+}
+
+nav li a {
+    text-decoration: none;
+    color: #20467a ;
+    
+}
+
+nav li a:hover {
+    color: #ce3214; 
+
+}
+
+h1 { 
+	font-size: 3em;
+	line-height: 1;
+    
+ }
+
+h2 { 
+	font-size: 2em;
+	line-height: 1;
+	margin-bottom: 1em;
+ }
+
+p { 
+	line-height: 1.5;
+	margin-bottom: 1em;
+}
+
+a {
+    text-decoration: none;
+    color: #ce3214;
+}
+
+a:hover {
+    color: #AEBD63; 
+}
+
+section { 
+	min-height: 100%;
+	width: 100%;
+ }
+
+section .inside { 
+	padding: 40px 65px;
+ }
+
+article {
+	background-color:#e5eefb;
+	color:#20467a;
+	padding: 8px 40px 30px 40px;
+    margin-bottom: 30px;
+}
+
+footer {
+    background-color: #20467a;
+    padding: 20px;
+    color: #ffffff;
+    text-align: center;
+}
+
+summary {
+    color: #be3419;   
+}
+
+/*
+--------------------------------------------------------------
+ID Selectors
+--------------------------------------------------------------
+*/
+
+
+#page1 { 
+	color: #fff;
+	background: url(../img/back1.JPG) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover; 
+ }
+ 
+ #page1 .box {
+	position: relative;
+    background-color: rgba(61,87,122,0.7); 
+	padding: 5px 35px 30px;
+	width: 600px;
+    margin-top: 130px;
+ }
+ 
+#page2 { 
+	background: #ffffff;
+	color: #20467a;
+ }
+
+#page3 {
+    color: #fff;
+	background: url(../img/Slovakia-back.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+#page3 .box {
+	position: relative;
+    background-color: rgba(61,87,122,0.7); 
+	padding: 5px 0px 5px 40px;
+	width: 600px;
+    margin-top: 230px;
+ }
+
+#page3 .box a {
+    color: #ffffff;
+}
+
+#page3 .box a:hover {
+    color: #c44931;
+}
+
+#page4 { 
+	background: #ffffff;
+	color: #20467a;
+ }
+
+#page4 .inside {
+    padding: 35px 35px;
+}
+
+#current {
+    color: #ce3214;
+}
+
+
+
+/*
+------------------------------------------------
+Class Selectors
+------------------------------------------------
+*/
+
+.button {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    color: #ffffff;
+    text-decoration: none;
+    border-style: solid;
+    border-color: #ffffff;
+    border-width: 2px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 13px;
+    padding-top: 13px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #be3419; 
+    border-color: #be3419;
+}
+
+.list li a {
+    color: #20467a;  
+}
+
+.list li a:hover {
+    color: #AEBD63;  
+}
+
+.place-img {
+    float: left;
+    margin-right: 40px;
+}

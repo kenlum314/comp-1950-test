@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<!--Ken Lum-->
+<!--COMP 1950-->
+<html>
+<head>
+    <title>Homework #2: Places I Have Visited and HTML5 Features</title>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/jpeg" href="./images/pi_avatar.jpg">
+    <link rel="stylesheet" type="text/css" title="Original" href="./css/styles.css">
+    <link href="./css/style-lucia.css" rel="alternate stylesheet" title="Lucia Siplakova" type="text/css">
+    <base target="_blank">
+
+    <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <main>
+        <header>
+            <h1>Homework #2: Places I Have Visited and HTML5 Features</h1>
+        </header>
+        <section class="content-block">
+            <h2>Places I Have Visited</h2>
+            <p>
+                Here are two places I have visited: Edmonton, Alberta and San Francisco, California. I lived in the
+                former for three months back in <time>2002</time> for a summer job, while the latter I visited four
+                times between <time>1990</time> and <time>2014</time>.</p>
+            <p>
+                In the brief profiles below, I will compare each city to Vancouver:
+            </p>
+            <div class="column-pair" id="column-pair-0">
+                <article class="column-left">
+                    <h3>Edmonton, Alberta</h3>
+                    <p>
+                        Edmonton is a relatively modern city, with some new neighbourhoods
+                        entirely comprised of new houses, something not found in Vancouver.
+                        One of its major tourist attractions is the West Edmonton Mall (one
+                        of the largest malls in the world). Aside from the latter, I wasn't
+                        able to explore other tourist attractions as I was there to work:-(
+                    </p>
+                    <p>
+                        My favourite part about Edmonton is its roads. They are wide and afford drivers
+                        great visibility. Where we see stop signs in Metro Vancouver, Edmonton has yield
+                        signs, so there is no legal requirement to come to a complete stop. Truth be told,
+                        everyone in Vancouver treats the stop signs as yield signs anyhow; but in Edmonton, it
+                        is legal to do so!
+                    </p>
+                    <figure>
+                        <img src="images/edmonton.jpg" alt="Edmonton, AB">
+                        <figcaption>Panorama of Downtown Edmonton Skyline.</figcaption>
+                    </figure>
+                </article>
+                <article class="column-right">
+                    <h3>San Francisco, California</h3>
+                    <p>
+                        With relatives in San Francisco, I visited the city several times as a
+                        tourist. San Francisco is older than Vancouver and has very hilly terrain.
+                        A notable characteristic of San Francisco lies in its residential neighbourhoods,
+                        which primarily consist of row houses&mdash;houses which are in physical contact with
+                        each other along their adjacent walls.
+                    </p>
+                    <p>
+                        My favourite part about San Francisco is that its climate reminds me of what I wished Vancouver's
+                        would be. The weather is essentially a warmer, foggier, and less rainy version of Vancouver weather.
+                    </p>
+                    <br>
+                    <figure>
+                        <img src="images/san_francisco.jpg" alt="San Francisco, CA">
+                        <figcaption>Panorama of Downtown San Francisco Skyline.</figcaption>
+                    </figure>
+                </article>
+            </div>
+        </section>
+        <section class="content-block">
+            <h2>HTML5 Features</h2>
+            <p>
+                Two new HTML5 tags I have used on this page that were not demonstrated in class are the <code>time</code> and <code>summary</code> tags.
+            </p>
+            <div class="column-pair" id="column-pair-1">
+                <!--Unlike the above 'column-left' and 'column-right' 'article' elements, the corresponding elements here
+                have instead been semantically marked as sections as they refer to other parts of this page and therefore
+                do NOT qualify as articles since they are not examples of STANDALONE content.-->
+                <section class="column-left">
+                    <h3>The <code>time</code> Tag</h3>
+                    <ol>
+                        <li>
+                            The <code>time</code> tag surrounds the years listed in the introduction of the previous section
+                            (invoke your browser's element inspector on the years to see the markup). The purpose of the
+                            <code>time</code> tag is to semantically mark content as <em>human-readable</em> temporal information.
+                        </li>
+                        <li>
+                            The <code>time</code> tag has one specific attribute, <code>datetime</code>, which is used to define
+                            <em>machine-readable</em> temporal information (e.g. <code>&lt;time datetime=&quot;2015-03-14 00:00&quot;&gt;Start
+                            of Pi Day 2015&lt;/time&gt;</code>).
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <th>Browser Compatibility (latest versions)</th>
+                                    <th>IE</th>
+                                    <th>Firefox</th>
+                                    <th>Chrome</th>
+                                    <th>Safari</th>
+                                    <th>Opera</th>
+                                </tr>
+                                <tr>
+                                    <td>Compatible?</td>
+                                    <td>Yes.</td>
+                                    <td>Yes.</td>
+                                    <td>Yes.</td>
+                                    <td>Yes.</td>
+                                    <td>Yes.</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <p>
+                                <em>Remarks</em>: The <code>time</code> tag currently isn't rendered in a manner that makes
+                                it visually distinct from its surrounding text.
+                            </p>
+                        </li>
+                    </ol>
+                </section>
+                <section class="column-right">
+                    <h3>The <code>summary</code> Tag</h3>
+                    <ol>
+                        <li>
+                            The <code>summary</code> tag is used to give a title to (or <em>summarize</em>) the contents of the
+                            <code>details</code> tag. The <code>summary</code> tag must be used as a child of the
+                            <code>details</code> tag (and should be the <em>first</em> child tag). A <code>summary</code> tag can be seen at the bottom of this page, providing
+                            a title to the hidden assignment <em>details</em>.
+                        </li>
+                        <li>
+                            The <code>summary</code> tag has no specific attributes.
+                        </li>
+                        <li>
+                            <table>
+                                <tr>
+                                    <th>Browser Compatibility (latest versions)</th>
+                                    <th>IE</th>
+                                    <th>Firefox</th>
+                                    <th>Chrome</th>
+                                    <th>Safari</th>
+                                    <th>Opera</th>
+                                </tr>
+                                <tr>
+                                    <td>Compatible?</td>
+                                    <td>No.</td>
+                                    <td>No.</td>
+                                    <td>Yes.</td>
+                                    <td>Yes.</td>
+                                    <td>Yes.</td>
+                                </tr>
+                            </table>
+                        </li>
+                        <li>
+                            <p>
+                                <em>Remark A</em>: Without the HTML5 Shiv, the <code>details</code> and <code>summary</code>
+                                tags, along with all other HTML5-specific tags, do <em>not</em> get styled properly in IE 8
+                                and below. With the Shiv, the <code>details</code> and <code>summary</code> tags still don't
+                                function properly in those versions of IE, but at least they style reasonably.
+                            </p>
+                            <p>
+                                <em>Remark B</em>: In the browsers that are not compatible with the <code>details</code>
+                                and <code>summary</code> tags, the accordion widget is not present, but all the content
+                                (including the normally hidden content) is still visible and readable.
+                            </p>
+                        </li>
+                    </ol>
+                    <aside>
+                        <p>
+                            Note: The <code>details</code> tag is meant to give additional information in an accordion-like widget
+                            that can be opened or closed by the user.
+                        </p>
+                    </aside>
+                </section>
+            </div>
+        </section>
+        <footer>
+            <details>
+                <summary>Homework #2. COMP 1950.</summary>
+                <p>
+                    &copy; Ken Lum, 2015. All Rights Reserved.
+                    <br>
+                    Best viewed at a resolution of 1920x1080 (1080p).
+                    <br>
+                    <a href="http://bcitcomp.ca/1950/downloads/comp1950_homework02.pdf">Assignment Specifications</a>
+                </p>
+            </details>
+        </footer>
+    </main>
+</body>
+</html>
