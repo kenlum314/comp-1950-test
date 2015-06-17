@@ -1,0 +1,69 @@
+/* HTML tag selectors */
+figure, img {
+    width: inherit;
+    height: 240px;
+}
+figure {
+    margin: 0;
+}
+
+footer {
+    width: 100%;
+    margin-top: 30px;
+    float: left;
+}
+
+details {
+    left: 50%;
+    margin-left: 38%;
+}
+summary {
+    outline: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    text-align: left;
+}
+
+/* Class selectors */
+.content-block {
+    float: left;
+}
+
+.column-pair {
+    float: inherit;
+    margin-bottom: 15px;
+}
+
+.column-left, .column-right {
+    float: inherit;
+    padding: 10px;
+    width: 790px;
+    height: inherit;
+}
+.column-left {
+    background-color: teal;
+    margin-right: 10px;
+}
+.column-right {
+    float: right;
+    background-color: red;
+    margin-left: 10px;
+}
+
+/* ID selectors */
+#column-pair-0 {
+    height: 460px;
+}
+#column-pair-1 {
+    height: 360px;
+}
