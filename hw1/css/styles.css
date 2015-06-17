@@ -1,0 +1,36 @@
+#profilePic {
+    width: 200px;
+    height: 246px;
+    float: right;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    text-decoration: underline;
+}
+
+table, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+    padding: 5px;
+    text-align: left;
+}
+
+.motivation {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.tools {
+    font-family: "Courier New", Courier, monospace;
+}
+
+.websites {
+    font-family: Georgia, serif;
+}
+
+.sublist {
+    list-style-type: none;
+}
