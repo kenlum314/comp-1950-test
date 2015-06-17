@@ -1,0 +1,146 @@
+/*
+
+Author: Lucia Siplakova
+Course: COMP 1950
+
+*/
+
+/* HTML tag selectors */
+
+
+body {
+    margin: 0px; 
+    position: relative;
+    font-family: sans-serif; 
+}
+
+h1, h2, h3 {
+    font-family: serif;
+}
+
+
+main {
+    margin:0px;   
+}
+
+figure, img {
+    width: inherit;
+    height: 240px;
+}
+
+img[alt="San Francisco, CA"] {
+    border-style: solid;
+    border-color: ghostwhite;
+}
+
+
+header {
+    position: relative;
+    background-color: rosybrown;
+    height: 100px; 
+    padding: 20px 0 0 20px;
+}
+
+header h1 {
+    color:beige;
+}
+
+
+figure {
+    margin: 0;
+}
+
+footer {
+    position: relative;
+    height: 100px;
+    background-color: rosybrown;
+    padding-top: 20px;
+    color:beige;
+     
+}
+
+footer details {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;   
+}
+
+details {
+    left: 50%;
+    margin-left: 38%;
+}
+summary {
+    outline: none;
+}
+
+a:link, a:visited {
+    text-decoration: none;
+    color: lightblue;
+}
+a:hover, a:active {
+    text-decoration: underline;
+    color: ghostwhite;
+}
+
+table, th, td {
+    border: 1px solid lightgrey;
+    border-collapse: collapse;
+    text-align: left;
+    padding: 5px;
+}
+
+table tr:nth-child(n) {
+    background-color: lavenderblush;   
+}
+
+table tr:nth-child(2n) {
+    background-color: azure;   
+}
+
+/* Class selectors */
+.content-block {
+    float: center;
+    margin: 0px;
+    background-color: ghostwhite; 
+    padding: 30px;
+}
+
+.content-block h2 {
+    font-family: Verdena;
+    font-size: 1.5em;
+    font-style: normal;
+}
+
+.column-pair {
+    float: center;
+}
+
+.column-left, .column-right {
+    float: center;
+    padding: 30px;
+    height: auto;
+    margin: 20px 0 0 0;
+}
+
+
+
+.column-left {
+    width: auto;
+    background-color: cornsilk;
+   
+}
+.column-right {
+    width: auto;
+    background-color: blanchedalmond;
+    
+}
+
+/* ID selectors */
+#column-pair-0 {
+    height: auto;
+}
+#column-pair-1 {
+    height: auto;
+}
